@@ -1,0 +1,103 @@
+@import "@fontsource/overpass/300.css";
+@import "@fontsource/overpass/600.css";
+
+@import "@fontsource/ubuntu/400.css";
+@import "@fontsource/ubuntu/500.css";
+@import "@fontsource/ubuntu/700.css";
+
+@import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+.Overpass-300 {
+  font-family: "Overpass";
+  font-weight: 300;
+}
+
+.Overpass-600 {
+  font-family: "Overpass";
+  font-weight: 600;
+}
+
+.Ubuntu-400 {
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+.Overpass-500 {
+  font-family: "Overpass";
+  font-weight: 600;
+}
+
+.Ubuntu-700 {
+  font-family: "Ubuntu";
+  font-weight: 700;
+}
+
+.First-Part {
+  background:
+    linear-gradient(
+      to bottom,
+      #ff876f,
+      #ff876ff2,
+      #ff876fbd,
+      #ff4958ef,
+      #ff4958
+    ),
+    url("./images/bg-pattern-intro-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+}
+
+@media (min-width: 1024px) {
+  .First-Part {
+    background:
+      linear-gradient(
+        to bottom,
+        #ff876f,
+        #ff876ff2,
+        #ff876fbd,
+        #ff4958ef,
+        #ff4958
+      ),
+      url("./images/bg-pattern-intro-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 190%;
+  }
+}
+
+/*
+- Orange 300: hsl(13, 100%, 72%)
+- Red 550: hsl(353, 100%, 62%)
+*/
+
+.Second-Button-Background {
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+}
+
+.Third-Part {
+  background: url("images/bg-pattern-circles.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(208, 49%, 24%);
+}
+
+@layer components {
+  .Animation-Class {
+    @apply transition-all duration-150 ease-in-out;
+  }
+
+  .First-Button-Class {
+    @apply text-[text-[hsl(208,49%,24%)]];
+  }
+  .Second-Button-Class {
+    @apply text-white px-10 py-3 w-fit rounded-4xl;
+  }
+}

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@theme {
+  /* BODY TEXT */
+  --text-sm: clamp(0.875rem, 0.2vw + 0.8rem, 0.95rem);
+  --text-base: clamp(1rem, 0.3vw + 0.9rem, 1.125rem);
+  --text-lg: clamp(1.125rem, 0.5vw + 1rem, 1.25rem);
+
+  /* SUB HEADINGS */
+  --text-xl: clamp(1.25rem, 0.9vw + 1rem, 1.75rem);
+  --text-2xl: clamp(1.5rem, 1.4vw + 1rem, 2.25rem);
+  --text-3xl: clamp(2rem, 2.2vw + 1rem, 3rem);
+
+  /* HEADINGS */
+  --text-4xl: clamp(2.5rem, 3vw + 1rem, 4rem);
+  --text-5xl: clamp(3rem, 4vw + 1rem, 5rem);
+  --text-6xl: clamp(3.5rem, 5vw + 1rem, 6rem);
+
+  /* HERO / DISPLAY */
+  --text-7xl: clamp(4rem, 6vw + 1rem, 7rem);
+  --text-8xl: clamp(4.5rem, 7.5vw + 1rem, 8.5rem);
+  --text-9xl: clamp(5rem, 9vw + 1rem, 10rem);
+}
